@@ -1,25 +1,25 @@
 class Camembert < Formula
-  desc "Disk-usage explorer en CLI Rust : scanne un dossier et l'affiche en camembert ASCII Unicode interactif (drill-down souris/clavier)."
+  desc "Interactive disk-usage explorer for the terminal: Unicode pie chart with mouse and keyboard drill-down."
   homepage "https://github.com/SouquieresAdam/camembert"
-  version "0.1.2"
+  version "0.1.4"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/SouquieresAdam/camembert/releases/download/v0.1.2/camembert-aarch64-apple-darwin.tar.xz"
-      sha256 "9969792c80a3565fd4d0ec74146af190b6556ffbc2ad23cf4e0dc641222dd1f8"
+      url "https://github.com/SouquieresAdam/camembert/releases/download/v0.1.4/camembert-aarch64-apple-darwin.tar.xz"
+      sha256 "564752508b86ede1cf1fbf95c3871a7d7c00798122ef35312c1e2970c588460d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/SouquieresAdam/camembert/releases/download/v0.1.2/camembert-x86_64-apple-darwin.tar.xz"
-      sha256 "70e8f8ed3f31d494880e2c919b3b6d423a720079b04b32da95af5781585bab50"
+      url "https://github.com/SouquieresAdam/camembert/releases/download/v0.1.4/camembert-x86_64-apple-darwin.tar.xz"
+      sha256 "4b4858b330f9f5ad48c26c30f1228a7b835048b336f18c96a95a5f769e3ea667"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/SouquieresAdam/camembert/releases/download/v0.1.2/camembert-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "6e8a28f4d6918eafefbe5fd3f3cef8a68015fd5a07416ba948b6488973d80c7a"
+      url "https://github.com/SouquieresAdam/camembert/releases/download/v0.1.4/camembert-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "150ea5ea1ac7e991a05b05f5c6659e808f9d70837f2b5f81651bf6fdb2b261aa"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/SouquieresAdam/camembert/releases/download/v0.1.2/camembert-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "1e8b98c98998f12467b4614c2f0289678c4f24ec3aa57cebe2b62053e7a39a2e"
+      url "https://github.com/SouquieresAdam/camembert/releases/download/v0.1.4/camembert-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "725c08304d7d6de110ac91a880ca34e1396bcd081fbb6608f5dd3a2011476ef5"
     end
   end
   license "MIT"
